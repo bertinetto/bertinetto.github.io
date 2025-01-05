@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CFNet: End-to-end representation learning for Correlation Filter based tracking</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./stuff/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./stuff/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="./stuff/starter-template.css" rel="stylesheet">
+    <!-- My own style -->
+    <link href="./stuff/project_style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./stuff/ie-emulation-modes-warning.js"></script>
+    <!-- Google analytics snippet -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96369953-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+<!-- 
+     <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-96369953-5', 'auto');
+		  ga('send', 'pageview');
+
+	</script> -->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><img src="./stuff/oxford_logo.png"></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href="index.html">Home</a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>            
+            <li><a class="navbar-brand" href="staple.html">Staple</a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href="siamese-fc.html">SiameseFC</a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href="https://arxiv.org/abs/1606.05233">Learnet</a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href="#"><b>CFNet</b></a></li>            
+          </ul>          
+            <!-- <img class="pull-right" src="./stuff/oxford_logo.png"> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+      <div class="row">
+        <div><h1>End-to-end representation learning for Correlation Filter based tracking</h1></div>
+        <div><p class="lead"><a href="http://jack.valmadre.net/">Jack Valmadre *</a>, <a href="index.html">Luca Bertinetto *</a>, <a href="http://www.robots.ox.ac.uk/~joao/">João F. Henriques</a>, <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>, <a href="https://scholar.google.it/citations?user=kPxa2w0AAAAJ&hl=en&oi=ao">Philip H.S. Torr</a></div>
+        <div><p class="university">University of Oxford</p></div>
+        <div><p class="contacts">{name.surname}@eng.ox.ac.uk</p></div>
+          &nbsp;
+        <div>
+    	  	<p class="pointers_sub"> <b style="color:red">News</b>: <b>we won the VOT-17 real-time challenge</b> with the conv5 baseline of this paper</p>
+		<p class="pointers_sub"> <b style="color:red">Note</b>: in case of problems with the download links below, all files can also be downloaded <a href="http://bit.ly/cfnet_gdrive_alternative">from this alternative link</a>.</p>
+        </div>        
+        &nbsp;
+		<div><img class="img-responsive center-block" alt="pipeline picture" src="./cfnet/page1_teaser.jpg" style="width:80%"></div>
+        &nbsp;
+        &nbsp;     
+        <div><p class="abstract text-left">The Correlation Filter is an algorithm that trains a linear template to discriminate between images and their translations.
+		It is well suited to object tracking because its formulation in the Fourier domain provides a fast solution, enabling the detector to be re-trained once per frame.
+		Previous works that use the Correlation Filter, however, have adopted features that were either manually designed or trained for a different task.
+		This work is the first to overcome this limitation by interpreting the Correlation Filter learner, which has a closed-form solution, as a differentiable layer in a deep neural network.
+		This enables learning deep features that are tightly coupled to the Correlation Filter.
+		Experiments illustrate that our method has the important practical benefit of allowing lightweight architectures to achieve state-of-the-art performance at high framerates.</p>
+        </div>
+        <div>
+            <p class="pointers_sub" style="text-align:left"><b>*</b> means equal contribution</p>
+        </div>
+        &nbsp;        
+        <div>
+			<p class="pointers" style="text-align:left">&#9656 <a href="http://openaccess.thecvf.com/content_cvpr_2017/html/Valmadre_End-To-End_Representation_Learning_CVPR_2017_paper.html">Paper</a> (CVPR 2017 proceedings)</small></p>
+        </div>
+        &nbsp;                
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 <a href="https://github.com/bertinetto/cfnet">Code</a></p>
+          <!-- <p class="pointers" style="text-align:left">&#9656 <a href="https://github.com/bertinetto/staple">Code <i class="fa fa-file-code-o"> </i>&ensp;</a><small>(+ webcam demo)</small></p> -->          
+        </div>        
+        &nbsp;       
+<!--         <div id="paper">
+          <p class="pointers" style="text-align:left">&#9656 <a href="./stuff/poster_staple.pdf">Poster <i class="fa fa-file-pdf-o"></i> </a></p> 
+        </div>   -->      
+        &nbsp;
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 Training set (3862 videos): curated ILSVRC15-VID
+                <small>
+                    <a href="https://github.com/bertinetto/siamese-fc/tree/master/ILSVRC15-curation">[ How-to ] </a> 
+                    <a href="https://drive.google.com/file/d/0B7Awq_aAemXQMFpSUU90OW5oaXc/view?usp=sharing">[ Metadata (6.7 GB) ] </a>
+                    <a href="https://drive.google.com/file/d/0B7Awq_aAemXQcndzY3M5dkprVTA/view?usp=sharing">[ ILSVRC15 stats ] </a>
+                </small>
+            </p>
+        </div>
+        &nbsp;
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 Validation set (129 videos): TempleColor+VOT14+VOT16 (minus OTB videos)
+                <small>
+                    <a href="https://drive.google.com/file/d/0B7Awq_aAemXQSnhBVW5LNmNvUU0/view?usp=sharing">[ Download (4.2 GB) ] </a> 
+                </small>
+            </p>
+        </div>
+        &nbsp;
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 Test set
+                <small>
+                    <a href="http://cvlab.hanyang.ac.kr/tracker_benchmark/benchmark_v10.html">[ OTB-2013 ] </a>
+                    <a href="http://cvlab.hanyang.ac.kr/tracker_benchmark/index.html">[ OTB-100 ] </a>
+                </small>
+            </p>
+        </div>
+        &nbsp;
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 Pre-trained networks
+				<small>
+					<a href="https://drive.google.com/open?id=0B7Awq_aAemXQZ3JTc2l6TTZlQVE"> [ Download (60 MB) ] </a>
+				</small>
+		  </p>	
+        </div>
+        &nbsp;        
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 Results
+            <small>
+                <a href="https://drive.google.com/open?id=0B7Awq_aAemXQdTRpWVFpTncwd0E">[ OTB-2013 ] </a>
+                <a href="https://drive.google.com/open?id=0B7Awq_aAemXQZWxVejNwcGU5Umc">[ OTB-100 ] </a>
+            </small>
+        </p>
+<!--           <p class="pointers" style="text-align:left">&#9656 <a href="./stuff/Staple_website_results.zip">Results (coming soon) <i class="fa fa-file-zip-o"> </i></a><small></p>
+ -->    </div>
+		&nbsp;     
+      </div> <!-- row -->      
+    </div> <!-- container -->
+    &nbsp;
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./stuff/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./stuff/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./stuff/ie10-viewport-bug-workaround.js"></script>
+</html>

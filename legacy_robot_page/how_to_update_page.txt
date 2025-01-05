@@ -1,0 +1,2 @@
+files have to be 755 permissions
+rsync -avr robotspage/* luca@login.robots.ox.ac.uk:~/WWW/

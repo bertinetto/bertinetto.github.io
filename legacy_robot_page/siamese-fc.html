@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SiameseFC tracker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./stuff/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./stuff/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="./stuff/starter-template.css" rel="stylesheet">
+    <!-- My own style -->
+    <link href="./stuff/project_style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./stuff/ie-emulation-modes-warning.js"></script>
+    <!-- Google analytics snippet -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96369953-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+<!--     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96369953-3', 'auto');
+      ga('send', 'pageview');
+    </script> -->
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><img src="./stuff/oxford_logo.png"></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>            
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+          </ul>          
+            <!-- <img class="pull-right" src="./stuff/oxford_logo.png"> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <hr class="featurette-divider">
+    
+    <div class="container">
+      <div class="row">
+        <div><h1>Fully-Convolutional Siamese Networks for Object Tracking</h1></div>
+        <div><p class="authors"><a href="index.html">Luca Bertinetto *</a>, <a href="http://jack.valmadre.net/">Jack Valmadre *</a>, <a href="http://www.robots.ox.ac.uk/~joao/">João F. Henriques</a>, <a href="http://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>, <a href="https://scholar.google.it/citations?user=kPxa2w0AAAAJ&hl=en&oi=ao">Philip H.S. Torr</a></div>
+        <div><p class="university">University of Oxford</p></div>
+        <div><p class="contacts">{name.surname}@eng.ox.ac.uk</p></div>
+          &nbsp;
+        <div>
+		   <p class="pointers_sub"> <b style="color:red">News</b>: SiamFC ranks very high in all 6 new benchmarks presented in 2018: <a href="https://arxiv.org/abs/1810.11981">GOT-10k</a>, <a href="https://cis.temple.edu/lasot/">LaSoT</a>, <a href="https://oxuva.github.io/long-term-tracking-benchmark/">OxUvA</a>, <a href="https://tracking-net.org">TrackinNet</a>, <a href="https://arxiv.org/abs/1804.07056">VOT-LT</a> and <a href="https://amoudgl.github.io/tlp/">TLP</a>.
+           <p class="pointers_sub"> <b style="color:black">Note</b>: the old SiamFC implementation has now been discontinued, please use the <a href="https://github.com/bertinetto/cfnet">SiamFC conv5 baseline</a> of CVPR'17 CFNet.</p>
+	       <p class="pointers_sub"> <b style="color:red">News</b>: <b>we won the VOT-17 real-time challenge</b> (conv5 baseline of CVPR'17 CFNet)</p>
+	       <p class="pointers_sub"> <b style="color:red">News</b>: added VOT-17 results and TraX-compatible code.</p>
+        </div>        
+        &nbsp;
+		<div><img class="img-responsive center-block" alt="pipeline picture" src="./stuff/siamesefc_conv-explicit.jpg" style="width:75%"></div>
+        &nbsp;
+        &nbsp;     
+        <div><p class="abstract text-left">The problem of arbitrary object tracking has traditionally been tackled by learning a model of the object's appearance exclusively online, using as sole training data the video itself. Despite the success of these methods, their online-only approach inherently limits the richness of the model they can learn. Recently, several attempts have been made to exploit the expressive power of deep convolutional networks. However, when the object to track is not known beforehand, it is necessary to perform Stochastic Gradient Descent online to adapt the weights of the network, severely compromising the speed of the system. In this paper we equip a basic tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. Our tracker operates at frame-rates beyond real-time and, despite its extreme simplicity, achieves state-of-the-art performance in multiple benchmarks.</p>
+        </div>
+        <div>
+            <p class="pointers_sub" style="text-align:left"><b>*</b> equal contribution</p>
+        </div>
+        &nbsp;
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 <small>We refer to the most recent version as SiamFC v2. It is described in our CFNet CVPR'17 paper as "baseline conv5". For data, raw results and pretrained networks of SiamFC please check the <a href="cfnet.html">CFNet project page</a>.</small></p> 
+        </div>     
+        &nbsp;        
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 <a href="http://arxiv.org/abs/1606.09549">Paper (<b>v1</b>/ECCVw'16) <i class="fa fa-file-pdf-o"></i> </a><small>&ensp;<a href="./stuff/bertinetto2016fully.bib.txt">[bibtex]</a>&ensp;</small></p>
+        </div>
+        &nbsp;
+        <div>
+            <p class="pointers" style="text-align:left">&#9656 <a href="http://openaccess.thecvf.com/content_cvpr_2017/html/Valmadre_End-To-End_Representation_Learning_CVPR_2017_paper.html">Paper (<b>v2</b>/CVPR'17) <i class="fa fa-file-pdf-o"></i> </a>&ensp;</p> 
+        </div>
+        &nbsp;        
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 <a href="https://github.com/bertinetto/cfnet">Code (v2) <i class="fa fa-file-code-o"> </i>&ensp;</a></p>
+        </div>
+	&nbsp;
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 <a href="https://github.com/torrvision/siamfc-tf">TensorFlow port (v2, inference/tracking only)&ensp;<i class="fa fa-file-code-o"> </i>&ensp;</a></p>          
+        </div>
+        &nbsp;
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 Pre-trained networks (v1) <small><a href="./stuff/siam-fc_nets/2016-08-17.net.mat">[ color ]</a> <a href="./stuff/siam-fc_nets/2016-08-17_gray025.net.mat">[ color+gray ]</a><small></p>
+        </div>
+        &nbsp;        
+        <div>
+          <p class="pointers" style="text-align:left">&#9656 Results (v1) <i class="fa fa-file-zip-o"> </i>&ensp;
+            <small>
+                <a href="./stuff/siam-fc_results/otb50.zip">[ OTB-13 (v1)]</a>
+		        <a href="https://drive.google.com/open?id=0B7Awq_aAemXQdUxPWGhOZHFhLVU">[ OTB-100 (v1)]</a>
+                <a href="./stuff/siam-fc_results/vot17.zip">[ VOT-17 (v2)]</a>
+            </small>
+        </p>
+	</div>
+	&nbsp;
+    <div>
+      <p class="pointers" style="text-align:left">&#9656 <a href="http://data.votchallenge.net/vot2017/trackers/21_SiamFC.zip">Code (v2) compatible with the VOT TraX protocol &ensp;<i class="fa fa-file-zip-o"> </i>&ensp;</a></p>          
+    </div>
+	&nbsp;
+	<div>
+	<p class="pointers" style="text-align:left">&#9656 <a href="https://www.youtube.com/watch?v=jZoUalMMZ_0">High level overview&ensp;<i class="fa fa-video-camera"> </i>&ensp;</a><small>(@ ReWork DL in Healthcare London summit)</small></p>
+	</div>
+	&nbsp;         
+        <div>
+	
+            <p class="pointers" style="text-align:left">&#9656 Example videos <i class="fa fa-video-camera"> </i>&ensp;<small>(appearance learnt from first frame only!)</small></p>
+            <br/><br/>
+            <!-- <p class="pointers" style="text-align:left">&#9656 <a href="https://github.com/bertinetto/staple">Code <i class="fa fa-file-code-o"> </i>&ensp;</a><small>(+ webcam demo)</small></p> -->          
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zS6kiI8DgDY?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EpzNOh_ttdY?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_hypDVQwPY?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WBS907Y_mT8?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AWNjguzyxuk?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X5wxFK6K_WQ?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fi0eXf6Nju4?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KP8DIHDxJ5Q?controls=0&showinfo=0&rel=0" frameborder="0"></iframe>            
+        </div>        
+      </div> <!-- row -->      
+    </div> <!-- container -->
+    &nbsp;
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./stuff/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./stuff/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./stuff/ie10-viewport-bug-workaround.js"></script>
+  
+
+<!-- <span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body></html> -->

@@ -1,0 +1,17 @@
+NEWS
+- google phd summit
+- webseminar for nips paper
+- conferences attended: 2x MURI, ICCV2015, Sicily2015, CVPR2016, NIPS2016, ECCV2016, CVPR17
+
+LINK
+- scholar
+- linkedin
+- email
+- google photo selected pictures
+- add link to univ of oxford in the image
+
+* add recent news
+* add picture
+* add short bio
+* update siam-fc paper bibtex w/ ECCV proceedings
+* turn each paper into a website, take inspiration from Saurabh Gupta Berkeley website

@@ -1,0 +1,6 @@
+@article{bertinetto2016fully,
+  title={Fully-Convolutional Siamese Networks for Object Tracking},
+  author={Bertinetto, Luca and Valmadre, Jack and Henriques, Jo{\~a}o F and Vedaldi, Andrea and Torr, Philip HS},
+  journal={arXiv preprint arXiv:1606.09549},
+  year={2016}
+}

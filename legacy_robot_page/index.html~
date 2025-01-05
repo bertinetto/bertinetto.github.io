@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Luca Bertinetto - Personal page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stuff/bootstrap.min.css" rel="stylesheet">
+    <link href="stuff/bootstrap-social.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="stuff/project_style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./stuff/ie-emulation-modes-warning.js"></script> 
+    <script src="https://use.fontawesome.com/83eca5203d.js"></script>
+
+    <!-- Google analytics snippet -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96369953-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+<!--     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96369953-2', 'auto');
+      ga('send', 'pageview');
+    </script>      -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><img src="./stuff/oxford_logo.png"></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href=""></a></li>
+            <li><a class="navbar-brand" href="#"><b>Home</b></a></li>           
+          </ul>          
+            <!-- <img class="pull-right" src="./stuff/oxford_logo.png"> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <div class="row">
+                    <h1>Luca Bertinetto</h1>
+                    <a class="btn btn-lg btn-social-icon btn-reddit" href="https://scholar.google.co.uk/citations?user=zEy5CTkAAAAJ&hl=en">
+                        <span class="fa fa-file-text"></span>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/bertinetto">
+                        <span class="fa fa-github"></span>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-lg btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/lucabertinetto/">
+                        <span class="fa fa-linkedin-square"></span>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-lg btn-social-icon btn-google" href="https://www.youtube.com/user/lucabertinetto">
+                        <span class="fa fa-youtube"></span>
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;                                                                                  
+                    <a class="btn btn-lg btn-social-icon btn-twitter" href="https://twitter.com/bertinettooo">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                </div>     
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+        <hr class="featurette-divider">
+
+        <!-- Featurette -->
+        <div class="featurette">        
+            <h2 class="featurette-heading">News</h2>
+			<p class="lead"> &#9656 (Oct '17) We won the ICCV'17 VOT real-time tracking challenge!</p>
+			<p class="lead"> &#9656 (Jun '17) I have joined the Magic Pony team at Twitter London for an internship.</p>
+			<p class="lead"> &#9656 (Jun '17) We have written a TensorFlow port of SiamFC, <a href=https://github.com/torrvision/siamfc-tf>here</a> the repo.</p>
+			<p class="lead"> &#9656 (Apr '17) Code, paper, pre-trained networks and results (OTB-100, OTB-2013) of our CVPR'17 paper CFNet are now available.</p>            
+            <p class="lead"> &#9656 (Mar '17) Our paper <i>End-to-end representation learning for Correlation Filter based tracking</i> has been accepted to CVPR'17.</p>
+            <p class="lead"> &#9656 (Mar '17) I gave a high-level overview of our research on Siamese networks at the Deep Learning and Healthcare summit in London. [ <a href="https://www.youtube.com/watch?v=jZoUalMMZ_0">Video</a> ]</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-left" src="./cfnet/page1_teaser_square.jpg">
+            <h2 class="featurette-heading"><a href="cfnet.html">End-to-end representation learning for Correlation Filter based tracking</a>
+            </h2>
+			<h2 class="text-muted">CVPR 2017</h2>
+            <p class="lead text-muted"><b>Jack Valmadre*, Luca Bertinetto*,  Jo&atilde;o Henriques, Andrea Vedaldi, Philip Torr</b></p>          
+            <p class="lead">The Correlation Filter is an algorithm that trains a linear template to discriminate between images and their translations. It is well suited to object tracking because its formulation in the Fourier domain provides a fast solution, enabling the detector to be re-trained once per frame. Previous works that use the Correlation Filter, however, have adopted features that were either manually designed or trained for a different task. This work is the first to overcome this limitation by interpreting the Correlation Filter learner, which has a closed-form solution, as a differentiable layer in a deep neural network. This enables learning deep features that are tightly coupled to the Correlation Filter. Experiments illustrate that our method has the important practical benefit of allowing lightweight architectures to achieve state-of-the-art performance at high framerates.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-right" src="./stuff/siamesefc_conv-explicit_square.png">
+            <h2 class="featurette-heading"><a href="siamese-fc.html">Fully-Convolutional Siamese nets for object tracking</a>
+            </h2>
+            <h2 class="text-muted">ECCV 2016 (VOT workshop) - invited as oral</h2>
+			<p class="lead text-muted"><b>Luca Bertinetto*, Jack Valmadre*, Jo&atilde;o Henriques, Andrea Vedaldi, Philip Torr</b></p>          
+            <p class="lead">The problem of arbitrary object tracking has traditionally been tackled by learning a model of the object's appearance exclusively online.
+            Recently, several attempts have been made to exploit deep conv-nets.
+            However, when the object to track is not known beforehand, it is necessary to perform SGD online to adapt the weights of the network, severely compromising the operating speed.
+            By equipping a basic tracking algorithm with a novel fully-convolutional Siamese network (trained end-to-end on ILSVRC15-VID) we are able to operate at frame-rates beyond real-time and yet achieve state-of-the-art performance in multiple benchmarks.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-left" src="./stuff/learnet_square.png">
+            <h2 class="featurette-heading"><a href="https://arxiv.org/abs/1606.05233">Learning feed-forward one-shot learners
+            </a></h2>
+            <h2 class="text-muted">NIPS 2016</h2>
+			<p class="lead text-muted"><b>Luca Bertinetto*, Jo&atilde;o Henriques*, Jack Valmadre*, Philip Torr, Andrea Vedaldi</b></p>
+			<p class="lead">We propose a method to learn the parameters of a deep model in one shot. We construct the learner as a second deep network, called a <i>learnet</i>, which predicts the parameters of a pupil network from a single exemplar. In this manner we obtain an efficient feed-forward one-shot learner, trained end-to-end by minimizing a one-shot classification objective in a learning to learn formulation. In order to make the construction feasible, we propose a number of factorizations of the parameters of the pupil network. We demonstrate encouraging results by learning characters from single exemplars in Omniglot and by tracking visual objects from a single exemplar in the VOT benchmark.</p>
+			<p class="lead"><a href="https://youtu.be/BnLN3uoXMRY">Video presentation for VALSE seminar</a></p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Featurette -->
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-right" src="./stuff/staple_square.png">
+            <h2 class="featurette-heading"><a href="staple.html">Staple: Complementary Learners for Real-Time Tracking
+            </a></h2>
+            <h2 class="text-muted">CVPR 2016.</h2>
+			<p class="lead text-muted"><b>Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik, Philip Torr</b></p>
+            <p class="lead">Correlation Filter-based trackers have recently achieved excellent performance. However, since the model that they learn depends on the spatial layout of the tracked object, they are notoriously sensitive to deformation. Models based on colour statistics have complementary traits: they cope well with variation in shape, but suffer when illumination is not consistent.
+            We show that a simple tracker combining complementary cues in a ridge regression framework can operate faster than 80 FPS and outperform recent and far more sophisticated trackers according to multiple benchmarks.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Footer -->
+<!--         <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Luca Bertinetto 2016</p>
+                </div>
+            </div>
+        </footer> -->
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
