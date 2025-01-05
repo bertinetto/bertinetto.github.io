@@ -1,6 +1,0 @@
-@article{valmadre2017end,
-  title={End-to-end representation learning for Correlation Filter based tracking},
-  author={Valmadre, Jack and Bertinetto, Luca and Henriques, Jo{\~a}o F and Vedaldi, Andrea and Torr, Philip HS},
-  journal={arXiv preprint arXiv:1704.06036},
-  year={2017}
-}
