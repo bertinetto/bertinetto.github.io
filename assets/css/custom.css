@@ -1,21 +1,25 @@
 .profile {
     margin-bottom: 20px;
-    /* Remove background-related properties if they were previously here */
-    padding: 20px; /* Padding for the profile section */
+    padding: 40px; /* Padding for the profile section */
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
-  
+
   .profile .info {
       text-align: center;
       color: #333;
       padding: 10px; /* Padding for the text */
+      z-index: 1;
+      position: relative;
   }
-  
+
   .profile .social {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   .profile .social li {
     display: inline-block;
     margin-right: 10px;

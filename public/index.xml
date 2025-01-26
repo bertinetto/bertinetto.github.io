@@ -69,7 +69,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I am a machine learning researcher and manager, currently leading the AI research team in precision medicine at &lt;a href=&#34;https://www.exscientia.ai/&#34;&gt;Exscientia&lt;/a&gt;, where our work focuses on oncology and phenotype-driven drug discovery. Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;I am a machine learning researcher and manager, currently leading the AI research team in precision medicine at &lt;a href=&#34;https://www.exscientia.ai/&#34;&gt;Exscientia&lt;/a&gt;, where our work focuses on oncology and phenotype-driven drug discovery. Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
