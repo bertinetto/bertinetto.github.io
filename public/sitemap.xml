@@ -93,6 +93,30 @@
     
         
         <url>
+            <loc>http://localhost:1313/research/paper1/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/research/paper2/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/research/paper3/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/research/</loc>
+        </url>
+        
+    
+        
+        <url>
             <loc>http://localhost:1313/tags/</loc>
         </url>
         

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+<br/>
+{{ .Content }}
+
+<div class="research-list">
+  {{ range .Pages }}
+  <div class="research-item">
+    <h1>
+      <span style="font-weight: normal;">[{{ .Params.conference }} {{ .Params.year }}]</span>
+      <a href="{{ .Params.arxiv }}" title="{{ .Title }}">{{ .Title }}</a>
+    </h1>
+    <div class="content-wrapper" style="display: flex; gap: 20px; max-width: 800px;">
+      <div class="thumbnail" style="flex: 0 0 200px;">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" style="width: 200px; height: auto;">
+      </div>
+      <div class="details" style="flex: 1;">
+        <p>{{ .Params.tldr }}</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  {{ end }}
+</div>
+
+{{ end }} 

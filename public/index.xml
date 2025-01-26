@@ -69,7 +69,28 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I am a machine learning researcher and manager, currently leading the AI research team in precision medicine at &lt;a href=&#34;https://www.exscientia.ai/&#34;&gt;Exscientia&lt;/a&gt;, where our work focuses on oncology and phenotype-driven drug discovery. Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I am a researcher at the intersection between machine learning and biology at Recursion.&#xA;We are industrialising drug discovery with the objective of rad&lt;/p&gt;&#xA;&lt;p&gt;Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.&#xA;Prior to joining Recursion via Exscientia acquisition, I spent four years at the autonomous driving startup FiveAI (acquired by Bosch). There, I led research on advancing robust autonomous systems: adapting foundation models to new environments without retraining, developing meta-learning approaches, and understanding vulnerability to adversarial attacks. I also developed and published new methods for video tracking, segmentation, and hierarchical classification. I completed my PhD at the University of Oxford (2014-2018), where I wrote my thesis on Learning (to learn) from a few examples.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Paper 1</title>
+      <link>http://localhost:1313/research/paper1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/paper1/</guid>
+      <description>&lt;p&gt;This paper explores advanced techniques in computer vision, focusing on novel methods for image recognition and classification. The approach leverages deep learning architectures to achieve state-of-the-art results.&lt;/p&gt;&#xA;&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;Brief overview of the research paper and its main findings.&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Background and context of the research problem.&lt;/p&gt;&#xA;&lt;h1 id=&#34;methods&#34;&gt;Methods&lt;/h1&gt;&#xA;&lt;p&gt;Description of research methodology and approach.&lt;/p&gt;&#xA;&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;&#xA;&lt;p&gt;Key findings and data analysis.&lt;/p&gt;&#xA;&lt;h1 id=&#34;discussion&#34;&gt;Discussion&lt;/h1&gt;&#xA;&lt;p&gt;Interpretation of results and implications.&lt;/p&gt;&#xA;&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;&#xA;&lt;p&gt;Summary of contributions and future work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Paper 2</title>
+      <link>http://localhost:1313/research/paper2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/paper2/</guid>
+      <description>&lt;p&gt;This paper introduces a new framework for machine learning, enhancing model adaptability and performance in dynamic environments. The proposed method demonstrates significant improvements over existing techniques.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Brief summary of the research paper and its key findings.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Background and motivation for the research.&lt;/p&gt;&#xA;&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;&#xA;&lt;p&gt;Description of research methodology and approach.&lt;/p&gt;&#xA;&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;&#xA;&lt;p&gt;Key findings and data analysis.&lt;/p&gt;&#xA;&lt;h2 id=&#34;discussion&#34;&gt;Discussion&lt;/h2&gt;&#xA;&lt;p&gt;Interpretation of results and implications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;&#xA;&lt;p&gt;Summary of contributions and future work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Paper 3</title>
+      <link>http://localhost:1313/research/paper3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/paper3/</guid>
+      <description>&lt;p&gt;This paper presents a novel approach to neural network optimization, focusing on reducing computational complexity while maintaining accuracy. The results show promising applications in real-time systems.&lt;/p&gt;&#xA;&lt;h1 id=&#34;title-of-research-paper-3&#34;&gt;Title of Research Paper 3&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;This is an example abstract for the third research paper. It summarizes the key findings and methodology of the research.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Brief introduction to the research topic and problem statement.&lt;/p&gt;&#xA;&lt;h2 id=&#34;methodology&#34;&gt;Methodology&lt;/h2&gt;&#xA;&lt;p&gt;Description of research methods and approach.&lt;/p&gt;&#xA;&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;&#xA;&lt;p&gt;Key findings and analysis.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

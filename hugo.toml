@@ -23,3 +23,7 @@ languageCode = "en-gb"
   [[params.navlinks]]
   name = "photos/"
   url = "photos/"
+
+  [[params.navlinks]]
+  name = "research/"
+  url = "research/"
