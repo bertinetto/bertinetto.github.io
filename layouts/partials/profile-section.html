@@ -1,20 +1,21 @@
-<div class="profile" style="background-image: url('{{ "/images/background.jpg" | relURL }}'); background-size: cover; background-position: center; padding: 20px;">
-    <div class="info" style="width: 100%;">
-        <h2>{{ .Params.name }}</h2>
-        <p>{{ .Params.email }}</p>
-        <ul class="social">
-            {{ if .Params.linkedin }}
-            <li><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer">[LinkedIn]</a></li>
-            {{ end }}
-            {{ if .Params.github }}
-            <li><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer">[GitHub]</a></li>
-            {{ end }}
-            {{ if .Params.twitter }}
-            <li><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer">[Twitter]</a></li>
-            {{ end }}
-            {{ if .Params.googlescholar }}
-            <li><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer">[Google Scholar]</a></li>
-            {{ end }}
-        </ul>
-    </div>
+<div class="profile" style="background-image: url('{{ "/images/background.jpg" | relURL }}'); background-size: cover; background-position: center; height: 300px;">
+</div>
+<div class="info">
+    <h2>{{ .Params.name }}</h2>
+    <ul class="social">
+        <li><i class="fas fa-envelope"></i> {{ .Params.email }}</li>
+        {{ if .Params.googlescholar }}
+        <li><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+        {{ end }}
+        {{ if .Params.linkedin }}
+        <li><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        {{ end }}
+        {{ if .Params.github }}
+        <li><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+        {{ end }}
+        {{ if .Params.twitter }}
+        <li><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li>
+        {{ end }}
+    </ul>
+    <hr>
 </div>

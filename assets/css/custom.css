@@ -1,26 +1,20 @@
 .profile {
-    margin-bottom: 20px;
-    padding: 40px; /* Padding for the profile section */
+    height: 300px;
     background-size: cover;
     background-position: center;
-    position: relative;
-  }
+    margin-bottom: 20px;
+}
 
-  .profile .info {
-      text-align: center;
-      color: #333;
-      padding: 10px; /* Padding for the text */
-      z-index: 1;
-      position: relative;
-  }
+.info {
+    padding: 20px;
+}
 
-  .profile .social {
+.social li {
     list-style: none;
     padding: 0;
-    margin: 0;
-  }
+    margin: 10px 0;
+}
 
-  .profile .social li {
-    display: inline-block;
-    margin-right: 10px;
-  }
+.social li a i {
+    margin-right: 5px;
+}
