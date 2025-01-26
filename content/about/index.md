@@ -1,9 +1,31 @@
-+++
+---
+title: "About"
+draft: false
+description: "About Luca Bertinetto"
+
+name: "Luca Bertinetto"
+email: "1st-name [dot] surname [at] gmail [dot] com"
+linkedin: "your_linkedin_profile_url" # Replace with your actual URL
+github: "your_github_profile_url" # Replace with your actual URL
+twitter: "your_twitter_profile_url" # Replace with your actual URL
+googlescholar: "your_google_scholar_profile_url" # Replace with your actual URL
+
+profile_image: "/images/profile.jpg" # Path to your profile image in static/images
+
+# Use a layout that doesn't display the sidebar with posts, etc.
+layout: "no-sidebar"
+
+---
+
+I am a machine learning researcher and manager, currently leading the AI research team in precision medicine at [Exscientia](https://www.exscientia.ai/), where our work focuses on oncology and phenotype-driven drug discovery. Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.
+
+
+<!-- +++
 date = "2016-11-05T21:05:33+05:30"
 title = "About"
 +++
 
-A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
+LUCA: A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
 
 Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework. 
 
@@ -76,4 +98,4 @@ make hugo-server
 
 Copyright © 2024 [Marcin Mierzejewski](https://mrmierzejewski.com/)
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information. -->

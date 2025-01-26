@@ -67,9 +67,9 @@
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.&lt;/p&gt;&#xA;&lt;p&gt;Theme is based on a modern and minimal &lt;a href=&#34;https://terminalcss.xyz/&#34;&gt;Terminal CSS&lt;/a&gt; framework.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true&#34; alt=&#34;Console&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;live-demo&#34;&gt;Live demo&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mrmierzejewski.com/hugo-theme-console/&#34;&gt;https://mrmierzejewski.com/hugo-theme-console/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;From the root of your Hugo site, clone the theme into &lt;code&gt;themes/hugo-theme-console&lt;/code&gt; by running :&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;See the &lt;a href=&#34;https://gohugo.io/hugo-modules/theme-components/&#34;&gt;Hugo documentation&lt;/a&gt; for more information.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;&#xA;&lt;p&gt;Set theme parameter in your config file:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I am a machine learning researcher and manager, currently leading the AI research team in precision medicine at &lt;a href=&#34;https://www.exscientia.ai/&#34;&gt;Exscientia&lt;/a&gt;, where our work focuses on oncology and phenotype-driven drug discovery. Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
 </rss>

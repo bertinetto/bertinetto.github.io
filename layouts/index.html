@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrapper">
+  <div class="content">
+    {{ with .Site.GetPage "about" }}
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
