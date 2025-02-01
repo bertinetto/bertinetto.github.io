@@ -1,0 +1,63 @@
+<style>
+:root {
+    --base-font-size: {{ .Site.Params.baseFontSize | default "1rem" }};
+    --header-font-size: {{ .Site.Params.headerFontSize | default "1.2rem" }};
+}
+
+html, body {
+    font-size: var(--base-font-size);
+}
+
+/* Navigation and header elements */
+.terminal-nav, 
+.terminal-logo, 
+.terminal-menu, 
+.logo,
+.terminal-prompt,
+.terminal-menu li a,
+h1, h2, h3 {
+    font-size: var(--header-font-size) !important;
+}
+
+/* Site title and navigation */
+.terminal-prompt a,
+.terminal-menu > ul {
+    font-size: var(--header-font-size) !important;
+}
+
+/* Research paper titles */
+.research-item h1 {
+    font-size: var(--header-font-size);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .thumbnail {
+        display: none !important;
+    }
+    .content-wrapper {
+        gap: 0 !important;
+    }
+}
+
+.profile {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.social li {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social li a i {
+    margin-right: 5px;
+}
+</style> 

@@ -1,26 +1,43 @@
 {{ define "main" }}
-<h1>{{ .Page.Title }}</h1>
-<br/>
-{{ .Content }}
+<div class="wrapper">
+  <div class="content" style="max-width: 100%; margin: 0;">
+    <h1>{{ .Page.Title }}</h1>
+    <br/>
+    {{ .Content }}
 
-<div class="research-list">
-  {{ range .Pages }}
-  <div class="research-item">
-    <h1>
-      <span style="font-weight: normal;">[{{ .Params.conference }} {{ .Params.year }}]</span>
-      <a href="{{ .Params.arxiv }}" title="{{ .Title }}">{{ .Title }}</a>
-    </h1>
-    <div class="content-wrapper" style="display: flex; gap: 20px; max-width: 800px;">
-      <div class="thumbnail" style="flex: 0 0 200px;">
-        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" style="width: 200px; height: auto;">
+    <style>
+      @media (max-width: 768px) {
+        .thumbnail {
+          display: none !important;
+        }
+        .content-wrapper {
+          gap: 0 !important;
+        }
+      }
+    </style>
+
+    <div class="research-list">
+      {{ range sort .Pages "Params.year" "desc" }}
+      <div class="research-item" {{ if .Params.highlight }}style="background-color: #fff3e0; padding: 15px; border-radius: 5px;"{{ end }}>
+        <h1>
+          <span style="font-weight: normal;">[{{ .Params.conference }} {{ .Params.year }}]</span>
+          <a href="{{ .Params.arxiv }}" title="{{ .Title }}">{{ .Title }}</a>
+        </h1>
+        <div class="content-wrapper" style="display: flex; gap: 20px;">
+          {{ $thumbWidth := default "25%" .Params.thumbnail_width }}
+          <div class="thumbnail" style="flex: 0 0 {{ $thumbWidth }};">
+            {{ if .Params.thumbnail }}
+              <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" style="width: 100%; height: auto;">
+            {{ end }}
+          </div>
+          <div class="details" style="flex: 1;">
+            <p>{{ .Params.tldr }}</p>
+          </div>
+        </div>
       </div>
-      <div class="details" style="flex: 1;">
-        <p>{{ .Params.tldr }}</p>
-      </div>
+      <hr>
+      {{ end }}
     </div>
   </div>
-  <hr>
-  {{ end }}
 </div>
-
 {{ end }} 

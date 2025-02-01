@@ -1,3 +1,11 @@
+:root {
+    --base-font-size: {{ .Site.Params.baseFontSize | default "16px" }};
+}
+
+html, body {
+    font-size: var(--base-font-size);
+}
+
 .profile {
     height: 300px;
     background-size: cover;

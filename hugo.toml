@@ -11,6 +11,10 @@ languageCode = "en-gb"
   # To disable animations, please remove or comment animationStyle parameter
   animateStyle = "animated zoomIn fast"
   customCss = ["css/custom.css"]
+  
+  # Font sizes in rem units (1rem = 16px by default)
+  baseFontSize = "1.05rem"    # For regular text
+  headerFontSize = "1.15rem"  # For titles, navigation, etc.
 
   [[params.navlinks]]
   name = "about/"
