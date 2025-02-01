@@ -16,6 +16,10 @@ languageCode = "en-gb"
   baseFontSize = "1.05rem"    # For regular text
   headerFontSize = "1.15rem"  # For titles, navigation, etc.
 
+  # Research page settings
+  showAuthors = true         # Whether to display authors in research items
+  websiteAuthor = "Luca Bertinetto"  # Name to be underlined in author lists
+
   [[params.navlinks]]
   name = "about/"
   url = "about/"

@@ -28,6 +28,15 @@ h1, h2, h3 {
 /* Research paper titles */
 .research-item h1 {
     font-size: var(--header-font-size);
+    margin-bottom: 0.3em;
+}
+
+/* Authors styling */
+.authors {
+    font-style: italic;
+    color: #666;
+    margin: -5px 0 15px 0;
+    line-height: 1.4;
 }
 
 /* Mobile styles */
@@ -37,6 +46,9 @@ h1, h2, h3 {
     }
     .content-wrapper {
         gap: 0 !important;
+    }
+    .authors {
+        display: none !important;
     }
 }
 

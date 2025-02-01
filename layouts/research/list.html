@@ -23,6 +23,28 @@
           <span style="font-weight: normal;">[{{ .Params.conference }} {{ .Params.year }}]</span>
           <a href="{{ .Params.arxiv }}" title="{{ .Title }}">{{ .Title }}</a>
         </h1>
+        {{ if and .Site.Params.showAuthors .Params.authors }}
+        <div class="authors" style="font-style: italic; margin: -5px 0 15px 0; color: #666;">
+          {{ $websiteAuthor := .Site.Params.websiteAuthor }}
+          {{ $authors := .Params.authors }}
+          {{ $len := len $authors }}
+          {{ range $index, $author := $authors }}
+            {{ $cleanAuthor := replaceRE "\\s*\\*$" "" $author }}
+            {{ if eq $cleanAuthor $websiteAuthor }}
+              <span style="text-decoration: underline;">{{ $cleanAuthor }}</span>{{ if strings.HasSuffix $author "*" }}<sup>*</sup>{{ end }}
+            {{ else }}
+              {{ $cleanAuthor }}{{ if strings.HasSuffix $author "*" }}<sup>*</sup>{{ end }}
+            {{ end }}
+            {{- if not (eq (add $index 1) $len) -}}
+              {{- if eq (add $index 2) $len -}}
+                {{ " and " }}
+              {{- else if not (eq (add $index 1) $len) -}}
+                {{ ", " }}
+              {{- end -}}
+            {{- end -}}
+          {{ end }}
+        </div>
+        {{ end }}
         <div class="content-wrapper" style="display: flex; gap: 20px;">
           {{ $thumbWidth := default "25%" .Params.thumbnail_width }}
           <div class="thumbnail" style="flex: 0 0 {{ $thumbWidth }};">

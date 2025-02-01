@@ -3,6 +3,7 @@ title: "Fully-convolutional siamese networks for object tracking"
 conference: "ECCV workshops"
 year: 2016
 arxiv: "https://arxiv.org/abs/1606.09549"
+authors: ["Luca Bertinetto*", "Jack Valmadre*", "João F. Henriques", "Andrea Vedaldi", "Philip H.S. Torr"]
 thumbnail: "/images/siamfc.png"
 thumbnail_width: "25%"
 highlight: true  # Set to true to highlight this paper
