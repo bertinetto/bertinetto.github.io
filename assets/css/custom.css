@@ -1,5 +1,6 @@
 :root {
     --base-font-size: {{ .Site.Params.baseFontSize | default "16px" }};
+    --research-title-font-size: {{ .Site.Params.researchTitleFontSize | default "1.25rem" }};
 }
 
 html, body {
@@ -25,4 +26,8 @@ html, body {
 
 .social li a i {
     margin-right: 5px;
+}
+
+.research-item h1, .post-title {
+    font-size: var(--research-title-font-size);
 }

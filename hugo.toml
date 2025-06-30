@@ -9,12 +9,13 @@ languageCode = "en-gb"
 
   # Set the animation style -- https://animate.style/
   # To disable animations, please remove or comment animationStyle parameter
-  animateStyle = "animated zoomIn fast"
+  # animateStyle = "animated zoomIn fast"
   customCss = ["css/custom.css"]
   
   # Font sizes in rem units (1rem = 16px by default)
-  baseFontSize = "1.05rem"    # For regular text
-  headerFontSize = "1.15rem"  # For titles, navigation, etc.
+  baseFontSize = "0.9rem"    # For regular text
+  headerFontSize = "1rem"  # For titles, navigation, etc.
+  researchTitleFontSize = "1.25rem"  # For research and post titles
 
   # Research page settings
   showAuthors = true         # Whether to display authors in research items

@@ -3,6 +3,7 @@ title: "Let’s Take This Online: Adapting Scene Coordinate Regression
 Network Predictions for Online RGB-D Camera Relocalisation"
 conference: "3DV (oral)"
 year: 2019
+show_year: false
 arxiv: "https://arxiv.org/abs/1906.08744"
 thumbnail: "/images/camera_reloc.png"
 thumbnail_width: "25%"

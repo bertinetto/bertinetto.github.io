@@ -1,10 +1,18 @@
 ---
-title: "Learning feed-forward one-shot learners"
+title: "Fast online object tracking and segmentation: A unifying approach"
 conference: "CVPR"
 year: 2019
-arxiv: "https://arxiv.org/abs/1606.05233"
-thumbnail: "/images/learnet.png"
+show_year: false
+arxiv: "https://arxiv.org/abs/1812.05050"
+authors: ["Qiang Wang*", "Li Zhang*", "Luca Bertinetto*", "Weiming Hu", "Philip H.S. Torr"]
+thumbnail: "/images/siammask.jpg"
 thumbnail_width: "25%"
 highlight: false  # Set to true to highlight this paper
-tldr: "One-shot learning is usually tackled by using generative models or discriminative embeddings. Discriminative methods based on deep learning, which are very effective in other learning scenarios, are ill-suited for one-shot learning as they need large amounts of training data. In this paper, we propose a method to learn the parameters of a deep model in one shot. We construct the learner as a second deep network, called a learnet, which predicts the parameters of a pupil network from a single exemplar. In this manner we obtain an efficient feed-forward one-shot learner, trained end-to-end by minimizing a one-shot classification objective in a learning to learn formulation. In order to make the construction feasible, we propose a number of factorizations of the parameters of the pupil network. We demonstrate encouraging results by learning characters from single exemplars in Omniglot, and by tracking visual objects from a single initial exemplar in the Visual Object Tracking benchmark."
+code_links:
+  - text: "Code"
+    url: "https://github.com/foolwood/SiamMask"
+post_links:
+  - text: "TPAMI journal version"
+    url: "https://ieeexplore.ieee.org/abstract/document/10036241"
+tldr: "In this paper we illustrate how to perform both visual object tracking and semi-supervised video object segmentation, in real-time, with a single simple approach. Our method, dubbed SiamMask, improves the offline training procedure of popular fully-convolutional Siamese approaches for object tracking by augmenting their loss with a binary segmentation task. Once trained, SiamMask solely relies on a single bounding box initialisation and operates online, producing class-agnostic object segmentation masks and rotated bounding boxes at 55 frames per second. Despite its simplicity, versatility and fast speed, our strategy allows us to establish a new state of the art among real-time trackers on VOT-2018, while at the same time demonstrating competitive performance and the best speed for the semi-supervised video object segmentation task on DAVIS-2016 and DAVIS-2017."
 ---

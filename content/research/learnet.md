@@ -2,7 +2,9 @@
 title: "Learning feed-forward one-shot learners"
 conference: "NeurIPS"
 year: 2016
+show_year: false
 arxiv: "https://arxiv.org/abs/1606.05233"
+authors: ["Luca Bertinetto*", "João F. Henriques*", "Jack Valmadre*", "Philip H.S. Torr", "Andrea Vedaldi"]
 thumbnail: "/images/learnet.png"
 thumbnail_width: "25%"
 highlight: false  # Set to true to highlight this paper
