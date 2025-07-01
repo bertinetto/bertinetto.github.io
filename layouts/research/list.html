@@ -1,20 +1,10 @@
 {{ define "main" }}
 <div class="wrapper">
   <div class="content" style="max-width: 100%; margin: 0;">
+    <div class="profile" style="background-image: url('{{ "/images/background.jpg" | relURL }}'); background-size: cover; background-position: center; height: 150px;"></div>
     <h1>{{ .Page.Title }}</h1>
     <br/>
     {{ .Content }}
-
-    <style>
-      @media (max-width: 768px) {
-        .thumbnail {
-          display: none !important;
-        }
-        .content-wrapper {
-          gap: 0 !important;
-        }
-      }
-    </style>
 
     <div class="research-list">
       {{ range sort .Pages "Params.year" "desc" }}
