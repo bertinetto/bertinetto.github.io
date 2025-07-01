@@ -1,10 +1,14 @@
 {{ define "main" }}
 <div class="wrapper">
-  <div class="content">
-    {{ with .Site.GetPage "about" }}
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-    {{ end }}
+  <div class="content" style="max-width: 100%; margin: 0;">
+    <article>
+      {{- with .Site.GetPage "about" -}}
+        {{- partial "profile-section.html" . -}}
+        <div style="background-color: rgba(255, 255, 255, 0.8); padding: 15px;">
+          {{ .Content }}
+        </div>
+      {{- end -}}
+    </article>
   </div>
 </div>
 {{ end }}

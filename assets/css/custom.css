@@ -31,3 +31,14 @@ html, body {
 .research-item h1, .post-title {
     font-size: var(--research-title-font-size);
 }
+
+/* Navbar active link styling */
+.terminal-menu a.active {
+    color: #fff !important;
+    background: #222;
+    border-radius: 4px;
+    padding: 2px 8px;
+    text-decoration: underline;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
