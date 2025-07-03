@@ -10,6 +10,7 @@ languageCode = "en-gb"
   # Set the animation style -- https://animate.style/
   # To disable animations, please remove or comment animationStyle parameter
   # animateStyle = "animated zoomIn fast"
+  animateStyle = ""
   customCss = ["css/custom.css"]
   
   # Font sizes in rem units (1rem = 16px by default)
@@ -24,14 +25,6 @@ languageCode = "en-gb"
   [[params.navlinks]]
   name = "about/"
   url = "about/"
-
-  [[params.navlinks]]
-  name = "posts/"
-  url = "posts/"
-
-  [[params.navlinks]]
-  name = "photos/"
-  url = "photos/"
 
   [[params.navlinks]]
   name = "research/"

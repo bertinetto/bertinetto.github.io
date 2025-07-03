@@ -5,6 +5,7 @@
 
 html, body {
     font-size: var(--base-font-size);
+    background: pink !important;
 }
 
 .profile {
@@ -41,4 +42,35 @@ html, body {
     text-decoration: underline;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s, color 0.2s;
+}
+
+.social-nolist > div {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Default link style: turquoise */
+a.link-normal {
+    color: #1a95e0 !important;
+    text-decoration: underline !important;
+    transition: color 0.2s;
+}
+a.link-normal:hover {
+    color: #0d5c91 !important;
+}
+
+/* Elegant dotted underline link style */
+a.link-dotted {
+    border-bottom: 1px dotted #888 !important;
+    text-decoration: none !important;
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+    color: #1a95e0 !important;
+}
+a.link-dotted:hover {
+    border-bottom: 1px solid #444 !important;
+    color: #0d5c91 !important;
 }

@@ -2,20 +2,20 @@
 </div>
 <div class="info">
     <h2>{{ .Params.name }}</h2>
-    <ul class="social">
-        <li><i class="fas fa-envelope"></i> {{ .Params.email }}</li>
+    <div class="social-nolist">
+        <div><i class="fas fa-envelope"></i> {{ .Params.email }}</div>
         {{ if .Params.googlescholar }}
-        <li><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+        <div><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></div>
         {{ end }}
         {{ if .Params.linkedin }}
-        <li><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <div><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
         {{ end }}
         {{ if .Params.github }}
-        <li><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+        <div><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></div>
         {{ end }}
         {{ if .Params.twitter }}
-        <li><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <div><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></div>
         {{ end }}
-    </ul>
+    </div>
     <hr>
 </div>

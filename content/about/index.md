@@ -14,12 +14,12 @@ googlescholar: "https://scholar.google.com/citations?user=UqgGl-QAAAAJ"
 profile_image: "/images/profile.jpg"
 ---
 
-I am a researcher at the intersection between machine learning and biology at Recursion.
-We are industrialising drug discovery with the objective of rad
+Hi! I am a machine learning researcher at [Recursion](https://www.recursion.com "dotted"), where we industrialize drug discovery through AI and automation. Our platform systematically perturbs cells using small molecules, CRISPR gene knockouts, and other interventions to create an engine for large-scale and efficient hypothesis generation (and validation).
 
-Throughout my career, my research has consistently explored how AI systems can adapt and learn in dynamic environments, particularly in computer vision applications.
-Prior to joining Recursion via Exscientia acquisition, I spent four years at the autonomous driving startup FiveAI (acquired by Bosch). There, I led research on advancing robust autonomous systems: adapting foundation models to new environments without retraining, developing meta-learning approaches, and understanding vulnerability to adversarial attacks. I also developed and published new methods for video tracking, segmentation, and hierarchical classification. I completed my PhD at the University of Oxford (2014-2018), where I wrote my thesis on Learning (to learn) from a few examples.
+I joined Recursion through the [acquisition](https://www.reuters.com/markets/deals/biotech-firm-recursion-buy-smaller-peer-exscientia-688-million-2024-08-08/ "dotted") of Exscientia, where I previously led ML research in precision medicine.
 
-You can find the full list of my publications on [Google Scholar](https://scholar.google.com/citations?user=UqgGl-QAAAAJ).
+Throughout my career, my research has focused on developing AI systems that can rapidly adapt and learn in dynamic, data-constrained environments.
+Prior to joining Recursion/Exscientia, I spent four years at the autonomous driving startup FiveAI ([acquired](https://www.uktech.news/mobility/bosch-buys-five-ai-20220412 "dotted") by Bosch), where I worked on advancing robust and adaptive AI systems and mentored several PhD students.
+Prior to that, I did my PhD at the University of Oxford (2014-2018), where I developed the now-popular object tracking framework with fully-convolutional Siamese networks, alongside several contributions to few-shot learning and meta-learning.
 
-I believe we are living in one of the most interesting and consequential times in history, and I am motivated to advance technologies for human flourishing as both a researcher and an engineer.
+Please see a selected list of my open research work [here](../research "dotted"), or the full list on my [Google Scholar profile](https://scholar.google.com/citations?user=UqgGl-QAAAAJ "dotted").
