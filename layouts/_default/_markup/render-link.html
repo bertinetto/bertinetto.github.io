@@ -1,7 +1,1 @@
-{{- $class := "link-normal" -}}
-{{- with .Title -}}
-  {{- if in . "dotted" -}}
-    {{- $class = "link-dotted" -}}
-  {{- end -}}
-{{- end -}}
-<a href="{{ .Destination | safeURL }}" class="{{ $class }}">{{ .Text | safeHTML }}</a> 
+<a href="{{ .Destination | safeURL }}" class="content-link">{{ .Text | safeHTML }}</a> 

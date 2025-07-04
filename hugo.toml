@@ -14,9 +14,8 @@ languageCode = "en-gb"
   customCss = ["css/custom.css"]
   
   # Font sizes in rem units (1rem = 16px by default)
-  baseFontSize = "0.9rem"    # For regular text
-  headerFontSize = "1rem"  # For titles, navigation, etc.
-  researchTitleFontSize = "1.25rem"  # For research and post titles
+  baseFontSize = "0.95rem"    # For regular text
+  headerFontSize = "1.05rem"  # For titles, navigation, etc.
 
   # Research page settings
   showAuthors = true         # Whether to display authors in research items
@@ -29,3 +28,8 @@ languageCode = "en-gb"
   [[params.navlinks]]
   name = "research/"
   url = "research/"
+
+[params.linkstyle]
+main = "#3a8ca4"         # Muted teal for links
+hover = "#20607a"        # Slightly deeper teal on hover
+dotted = true            # Use dotted underline for content links

@@ -1,13 +1,13 @@
 ---
 title: "Attacking deep networks with surrogate-based adversarial black-box methods is easy"
 conference: "ICLR"
-year: 2022
+year: 2021
 show_year: false
 arxiv: "https://arxiv.org/abs/1606.09549"
 authors: ["Nicholas A. Lord", "Romain Mueller", "Luca Bertinetto"]
 thumbnail: "/images/gfcs.jpg"
-thumbnail_width: "25%"
-highlight: true
+thumbnail_width: "35%"
+highlight: false
 code_links:
   - text: "Code"
     url: "https://github.com/fiveai/GFCS"

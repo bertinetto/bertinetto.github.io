@@ -5,16 +5,16 @@
     <div class="social-nolist">
         <div><i class="fas fa-envelope"></i> {{ .Params.email }}</div>
         {{ if .Params.googlescholar }}
-        <div><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></div>
+        <div><a href="{{ .Params.googlescholar }}" target="_blank" rel="noopener noreferrer" class="site-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a></div>
         {{ end }}
         {{ if .Params.linkedin }}
-        <div><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+        <div><a href="{{ .Params.linkedin }}" target="_blank" rel="noopener noreferrer" class="site-link"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
         {{ end }}
         {{ if .Params.github }}
-        <div><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></div>
+        <div><a href="{{ .Params.github }}" target="_blank" rel="noopener noreferrer" class="site-link"><i class="fab fa-github"></i> GitHub</a></div>
         {{ end }}
         {{ if .Params.twitter }}
-        <div><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></div>
+        <div><a href="{{ .Params.twitter }}" target="_blank" rel="noopener noreferrer" class="site-link"><i class="fab fa-twitter"></i> Twitter</a></div>
         {{ end }}
     </div>
     <hr>

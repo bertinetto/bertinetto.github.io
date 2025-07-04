@@ -6,7 +6,7 @@ show_year: false
 arxiv: "https://arxiv.org/abs/1606.05233"
 authors: ["Malik Boudiaf", "Romain Mueller", "Ismail Ben Ayed", "Luca Bertinetto"]
 thumbnail_width: "0%"
-highlight: true
+highlight: false
 code_links:
   - text: "Code"
     url: "https://github.com/fiveai/LAME"

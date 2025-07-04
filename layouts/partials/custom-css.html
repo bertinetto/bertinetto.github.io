@@ -95,4 +95,31 @@ a.link-dotted:hover {
     border-bottom: 1px solid #444 !important;
     color: #20607a !important;
 }
+
+/* Content links (Markdown) */
+.content-link {
+    color: {{ with .Site.Params.linkstyle.main }}{{ . }}{{ else }}#3a8ca4{{ end }} !important;
+    text-decoration: none !important;
+    border-bottom: 1px dotted #888 !important;
+    padding-bottom: 1px;
+    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.content-link:hover {
+    color: {{ with .Site.Params.linkstyle.hover }}{{ . }}{{ else }}#20607a{{ end }} !important;
+    border-bottom: 1px dotted #bbb !important;
+    box-shadow: 0 2px 0 0 rgba(58,140,164,0.08);
+    background: rgba(58,140,164,0.04);
+}
+
+/* Site-wide links (header, nav, research titles) */
+.site-link {
+    color: {{ with .Site.Params.linkstyle.main }}{{ . }}{{ else }}#3a8ca4{{ end }} !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: color 0.2s;
+}
+.site-link:hover {
+    color: {{ with .Site.Params.linkstyle.hover }}{{ . }}{{ else }}#20607a{{ end }} !important;
+    text-decoration: underline !important;
+}
 </style> 
