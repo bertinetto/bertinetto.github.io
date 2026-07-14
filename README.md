@@ -1,6 +1,18 @@
 # Luca Bertinetto personal website
 
-Hugo source for [lucabertinetto.com](https://lucabertinetto.com). Active development is on the `dev-hugo` branch; `main` still hosts the older static site used by GitHub Pages.
+Hugo source for [lucabertinetto.com](https://lucabertinetto.com).
+
+## Branches
+
+| Branch | Role |
+|--------|------|
+| `dev-hugo` | Hugo source — edit and push here |
+| `static-hugo` | Built static site — published by GitHub Actions; served by GitHub Pages |
+| `main` | Frozen pre-Hugo static site — emergency rollback target |
+
+Pushing to `dev-hugo` runs [`.github/workflows/hugo.yml`](.github/workflows/hugo.yml): checkout (with theme submodule) → `hugo --minify` → publish `public/` to `static-hugo`.
+
+**Rollback:** GitHub Pages → Deploy from a branch → `main` / root.
 
 ## Local setup
 
@@ -42,3 +54,5 @@ Hugo source for [lucabertinetto.com](https://lucabertinetto.com). Active develop
 | `layouts/` | Custom templates overriding the theme |
 | `assets/css/custom.css` | Custom styles (processed by Hugo) |
 | `themes/console` | Theme submodule (`hugo-theme-console` fork) |
+
+Do not auto-format files under `layouts/` (Prettier breaks Hugo `{{ }}` syntax). See `.prettierignore`.
