@@ -3,7 +3,7 @@ title: "Parameter-free Online Test-time Adaptation"
 conference: "CVPR (oral)"
 year: 2022
 show_year: false
-arxiv: "https://arxiv.org/abs/1606.05233"
+arxiv: "https://arxiv.org/abs/2201.05718"
 authors: ["Malik Boudiaf", "Romain Mueller", "Ismail Ben Ayed", "Luca Bertinetto"]
 thumbnail_width: "0%"
 highlight: false

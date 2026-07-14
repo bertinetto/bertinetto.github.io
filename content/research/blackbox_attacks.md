@@ -3,7 +3,7 @@ title: "Attacking deep networks with surrogate-based adversarial black-box metho
 conference: "ICLR"
 year: 2021
 show_year: false
-arxiv: "https://arxiv.org/abs/1606.09549"
+arxiv: "https://arxiv.org/abs/2203.08725"
 authors: ["Nicholas A. Lord", "Romain Mueller", "Luca Bertinetto"]
 thumbnail: "/images/gfcs.jpg"
 thumbnail_width: "35%"

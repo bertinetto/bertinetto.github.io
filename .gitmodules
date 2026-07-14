@@ -1,4 +1,4 @@
 [submodule "themes/console"]
 	path = themes/console
-	url = git@github.com:bertinetto/hugo-theme-console.git
+	url = https://github.com/bertinetto/hugo-theme-console.git
 	branch = master

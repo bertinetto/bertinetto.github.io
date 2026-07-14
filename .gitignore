@@ -2,3 +2,4 @@
 public/
 .specstory/
 resources/_gen/images/photos/
+.hugo_build.lock
