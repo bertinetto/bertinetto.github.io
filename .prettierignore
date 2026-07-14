@@ -1,0 +1,4 @@
+# Hugo templates break under Prettier (it mangles {{ }} and quoted paths).
+layouts/**
+themes/**
+*.html

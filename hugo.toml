@@ -1,35 +1,43 @@
 baseurl = "https://lucabertinetto.com"
-title = "Luca Bertinetto personal page"
+title = "luca.bertinetto"
 theme = "console"
 languageCode = "en-gb"
 
 [params]
-  # Cutting off the page title to two chars for mobile (console-demo -> co)
-  titleCutting = true
+# On mobile, hide the site name and keep only the sunflower
+titleCutting = true
 
-  # Set the animation style -- https://animate.style/
-  # To disable animations, please remove or comment animationStyle parameter
-  # animateStyle = "animated zoomIn fast"
-  animateStyle = ""
-  customCss = ["css/custom.css"]
-  
-  # Font sizes in rem units (1rem = 16px by default)
-  baseFontSize = "0.95rem"    # For regular text
-  headerFontSize = "1.05rem"  # For titles, navigation, etc.
+# Shell-style prompt after the site name (e.g. 🌻 luca.bertinetto:~$)
+promptSuffix = ":~$"
 
-  # Research page settings
-  showAuthors = true         # Whether to display authors in research items
-  websiteAuthor = "Luca Bertinetto"  # Name to be underlined in author lists
+# Blinking terminal cursor after the prompt
+showCursor = false
 
-  [[params.navlinks]]
-  name = "about/"
-  url = "about/"
+# Set the animation style -- https://animate.style/
+# To disable animations, please remove or comment animationStyle parameter
+# animateStyle = "animated zoomIn fast"
+animateStyle = ""
+customCss = ["css/custom.css"]
 
-  [[params.navlinks]]
-  name = "research/"
-  url = "research/"
+# Font sizes in rem units (1rem = 16px by default)
+baseFontSize = "0.95rem"         # Regular body text
+headerFontSize = "1.05rem"       # Nav / logo chrome
+pageTitleFontSize = "1.35rem"    # Page-level h1 (research, about, …)
+sectionTitleFontSize = "1.05rem" # Subsection / paper titles
+
+# Research page settings
+showAuthors = true                # Whether to display authors in research items
+websiteAuthor = "Luca Bertinetto" # Name to be underlined in author lists
+
+[[params.navlinks]]
+name = "about/"
+url = "about/"
+
+[[params.navlinks]]
+name = "research/"
+url = "research/"
 
 [params.linkstyle]
-main = "#3a8ca4"         # Muted teal for links
-hover = "#20607a"        # Slightly deeper teal on hover
-dotted = true            # Use dotted underline for content links
+main = "#3a8ca4"  # Muted teal for links
+hover = "#20607a" # Slightly deeper teal on hover
+dotted = true     # Use dotted underline for content links
