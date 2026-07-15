@@ -1,1 +1,1 @@
-<a href="{{ .Destination | safeURL }}" class="content-link">{{ .Text | safeHTML }}</a> 
+<a href="{{ .Destination | safeURL }}" class="content-link">{{ .Text | safeHTML }}</a>{{- /* no trailing space before punctuation */ -}}

@@ -2,6 +2,10 @@
 {{- $headerFont := .Site.Params.headerFontSize | default "1.05rem" -}}
 {{- $pageTitleFont := .Site.Params.pageTitleFontSize | default "1.35rem" -}}
 {{- $sectionTitleFont := .Site.Params.sectionTitleFontSize | default "1.05rem" -}}
+{{- $preambleFont := .Site.Params.preambleFontSize | default "1.08rem" -}}
+{{- $profileNameFont := .Site.Params.profileNameFontSize | default "1.35rem" -}}
+{{- $profileRoleFont := .Site.Params.profileRoleFontSize | default "1.05rem" -}}
+{{- $authorsAfterTitleGap := .Site.Params.authorsAfterTitleGap | default "0.45em" -}}
 {{- $linkMain := .Site.Params.linkstyle.main | default "#3a8ca4" -}}
 {{- $linkHover := .Site.Params.linkstyle.hover | default "#20607a" -}}
 <style>
@@ -10,6 +14,10 @@
     --header-font-size: {{ $headerFont }};
     --page-title-font-size: {{ $pageTitleFont }};
     --section-title-font-size: {{ $sectionTitleFont }};
+    --preamble-font-size: {{ $preambleFont }};
+    --profile-name-font-size: {{ $profileNameFont }};
+    --profile-role-font-size: {{ $profileRoleFont }};
+    --authors-after-title-gap: {{ $authorsAfterTitleGap }};
     --display-h1-decoration: none;
     --site-link-main: {{ $linkMain }};
     --site-link-hover: {{ $linkHover }};
@@ -63,12 +71,37 @@ h1.page-title {
     display: block;
 }
 
+h2.profile-name {
+    margin-bottom: 0.15em;
+    font-size: var(--profile-name-font-size) !important;
+}
+
+.profile-role {
+    margin: 0 0 1em 0;
+    font-size: var(--profile-role-font-size) !important;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--font-color, inherit);
+    letter-spacing: 0.01em;
+}
+
+.research-preamble {
+    margin: 1.25em 0 1.75em 0;
+    font-size: var(--preamble-font-size);
+    line-height: 1.55;
+}
+
+.research-preamble p {
+    font-size: inherit;
+    margin-bottom: 0;
+}
+
 .research-item h1,
 .research-title,
 h1.section-title {
     font-size: var(--section-title-font-size) !important;
-    margin-bottom: 0.4em !important;
-    padding-bottom: 0.25em;
+    margin-bottom: 0 !important;
+    padding-bottom: 0.35em;
 }
 
 h1::after {
@@ -76,7 +109,7 @@ h1::after {
     display: block !important;
     position: absolute;
     left: 0;
-    bottom: 0.2em;
+    bottom: 0.15em;
     width: 100%;
     height: 0;
     border: none;
@@ -88,8 +121,16 @@ h1::after {
 .authors {
     font-style: italic;
     color: #666;
-    margin: -5px 0 15px 0;
-    line-height: 1.4;
+    margin: var(--authors-after-title-gap) 0 1em 0;
+    line-height: 1.45;
+}
+
+.research-item-compact .authors {
+    margin-bottom: 0.35em;
+}
+
+.patents-section {
+    margin-top: 2.75em;
 }
 
 .research-item {

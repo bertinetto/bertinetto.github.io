@@ -24,10 +24,14 @@ baseFontSize = "0.95rem"         # Regular body text
 headerFontSize = "1.05rem"       # Nav / logo chrome
 pageTitleFontSize = "1.35rem"    # Page-level h1 (research, about, …)
 sectionTitleFontSize = "1.05rem" # Subsection / paper titles
+preambleFontSize = "1.08rem"     # Research page preamble
+profileNameFontSize = "1.6rem"  # About / home name under banner
+profileRoleFontSize = "1.15rem"  # Role line under the name
 
 # Research page settings
 showAuthors = true                # Whether to display authors in research items
 websiteAuthor = "Luca Bertinetto" # Name to be underlined in author lists
+authorsAfterTitleGap = "0.45em"   # Space between paper-title underline and author list
 
 [[params.navlinks]]
 name = "about/"
