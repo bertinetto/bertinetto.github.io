@@ -1,0 +1,21 @@
+{{/* Renders an author list. Splits onto two balanced lines when len > 6. */}}
+{{- $websiteAuthor := .Site.Params.websiteAuthor -}}
+{{- $authors := .authors -}}
+{{- $len := len $authors -}}
+{{- $splitAt := 0 -}}
+{{- if gt $len 6 -}}
+  {{- $splitAt = div (add $len 1) 2 -}}
+{{- end -}}
+{{- range $index, $author := $authors -}}
+  {{- $cleanAuthor := replaceRE `\s*\*$` "" $author -}}
+  {{- if eq $cleanAuthor $websiteAuthor -}}
+    <span style="text-decoration: underline;">{{ $cleanAuthor }}</span>{{- if strings.HasSuffix $author "*" -}}<sup>*</sup>{{- end -}}
+  {{- else -}}
+    {{ $cleanAuthor }}{{- if strings.HasSuffix $author "*" -}}<sup>*</sup>{{- end -}}
+  {{- end -}}
+  {{- if and (gt $splitAt 0) (eq (add $index 1) $splitAt) -}}
+    {{ ", " }}<br>
+  {{- else if not (eq (add $index 1) $len) -}}
+    {{- if eq (add $index 2) $len -}}{{ " and " }}{{- else -}}{{ ", " }}{{- end -}}
+  {{- end -}}
+{{- end -}}

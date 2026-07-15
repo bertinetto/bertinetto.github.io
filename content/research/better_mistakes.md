@@ -6,7 +6,7 @@ show_year: false
 arxiv: "https://arxiv.org/abs/1912.09393"
 authors: ["Luca Bertinetto*", "Romain Mueller*", "Konstantinos Tertikas", "Sina Samangooei", "Nicholas A. Lord*"]
 thumbnail: "/images/bettermistakes.jpg"
-thumbnail_width: "25%"
+thumbnail_width: "40%"
 highlight: false  # Set to true to highlight this paper
 code_links:
   - text: "Code"
