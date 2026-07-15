@@ -1,0 +1,10 @@
+/* Legacy file kept for hugo.toml customCss; live styles live in
+   layouts/partials/custom-css.html (theme-aware light/dark palettes). */
+
+.social-nolist>div {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
