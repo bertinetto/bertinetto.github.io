@@ -11,21 +11,21 @@
 
     <div class="research-list">
       {{ range sort .Pages "Params.year" "desc" }}
-      <div class="research-item"{{ if .Params.highlight }} style="background-color: #fff3e0; padding: 15px; border-radius: 5px;"{{ end }}>
+      <div class="research-item{{ if .Params.highlight }} highlight{{ end }}">
         <h1 class="research-title section-title">
           <span style="font-weight: normal;">[{{ .Params.conference }}{{ if and (.Params.year) (or (not (isset .Params "show_year")) (.Params.show_year)) }} {{ .Params.year }}{{ end }}]</span>
           <a href="{{ .Params.arxiv }}" title="{{ .Title }}" class="site-link">{{ .Title }}</a>
         </h1>
-        {{ if and .Site.Params.showAuthors .Params.authors }}
-        <div class="authors">
-          {{ partial "author-list.html" (dict "Site" .Site "authors" .Params.authors) }}
-        </div>
-        {{ end }}
         <div class="content-wrapper">
           {{ $thumbWidth := default "25%" .Params.thumbnail_width }}
           {{ if and .Params.thumbnail (ne $thumbWidth "0%") }}
           <div class="thumbnail" style="width: {{ $thumbWidth }}; max-width: {{ $thumbWidth }};">
             <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+          </div>
+          {{ end }}
+          {{ if and .Site.Params.showAuthors .Params.authors }}
+          <div class="authors">
+            {{ partial "author-list.html" (dict "Site" .Site "authors" .Params.authors) }}
           </div>
           {{ end }}
           <div class="details">
@@ -54,7 +54,7 @@
                   </a>
                 {{ end }}
               {{ end }}
-              {{ .Params.tldr }}
+              {{ with .Params.tldr }}<span class="research-abstract">{{ . }}</span>{{ end }}
             </p>
           </div>
         </div>

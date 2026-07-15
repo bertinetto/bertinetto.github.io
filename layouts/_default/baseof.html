@@ -8,6 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="{{ absURL `hugo-theme-console/css/terminal-0.7.4.min.css` }}">
     <link rel="stylesheet" href="{{ absURL `hugo-theme-console/css/animate-4.1.1.min.css` }}">
     <link rel="stylesheet" href="{{ absURL `hugo-theme-console/css/console.css` }}">
@@ -47,6 +59,20 @@
                 {{ $isActive := or (eq $current (absURL .url | relURL)) (and (or (eq $current "/") (eq $current "/about/")) (or (eq .url "about/") (eq .url "/"))) }}
                 <li><a href="{{ absURL .url }}" typeof="ListItem" class="site-link{{ if $isActive }} active{{ end }}">{{ .name }}</a></li>
                 {{ end }}
+                <li>
+                  <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
+                    <span class="theme-switch" aria-hidden="true">
+                      <svg class="theme-switch-icon theme-switch-sun" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                        <circle cx="8" cy="8" r="2.25"/>
+                        <path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"/>
+                      </svg>
+                      <span class="theme-switch-track"><span class="theme-switch-thumb"></span></span>
+                      <svg class="theme-switch-icon theme-switch-moon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M6.2 1.6a6.2 6.2 0 1 0 8.2 8.1A5.1 5.1 0 1 1 6.2 1.6z"/>
+                      </svg>
+                    </span>
+                  </button>
+                </li>
             </ul>
           </nav>
         </div>
@@ -57,5 +83,6 @@
         {{ end }}
         {{ partial "footer.html" . }}
     </div>
+    <script src="{{ absURL `js/theme.js` }}"></script>
   </body>
 </html>

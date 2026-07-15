@@ -4,7 +4,7 @@
     <article>
       {{- with .Site.GetPage "about" -}}
         {{- partial "profile-section.html" . -}}
-        <div style="background-color: rgba(255, 255, 255, 0.8); padding: 15px;">
+        <div class="bio-panel">
           {{ .Content }}
         </div>
       {{- end -}}

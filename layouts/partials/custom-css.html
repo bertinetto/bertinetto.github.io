@@ -6,9 +6,69 @@
 {{- $profileNameFont := .Site.Params.profileNameFontSize | default "1.35rem" -}}
 {{- $profileRoleFont := .Site.Params.profileRoleFontSize | default "1.05rem" -}}
 {{- $authorsAfterTitleGap := .Site.Params.authorsAfterTitleGap | default "0.45em" -}}
-{{- $linkMain := .Site.Params.linkstyle.main | default "#3a8ca4" -}}
-{{- $linkHover := .Site.Params.linkstyle.hover | default "#20607a" -}}
 <style>
+/* Light palette — muted teal on clean white */
+html[data-theme="light"] {
+    color-scheme: light;
+    --background-color: #ffffff;
+    --font-color: #1a1c1e;
+    --invert-font-color: #ffffff;
+    --primary-color: #3a8ca4;
+    --secondary-color: #6b7280;
+    --tertiary-color: #6b7280;
+    --site-link-main: #3a8ca4;
+    --site-link-hover: #20607a;
+    --muted-color: #5c6570;
+    --panel-bg: transparent;
+    --panel-padding: 15px;
+    --highlight-bg: #fff6e8;
+    --rule-color: #c5cbd3;
+    --content-link-border: #8a939c;
+    --content-link-border-hover: #6b7280;
+    --content-link-hover-bg: rgba(58, 140, 164, 0.06);
+    --content-link-hover-shadow: rgba(58, 140, 164, 0.12);
+    --code-bg-color: #eef2f4;
+    /* Active nav — muted teal pill (matches link palette) */
+    --nav-active-bg: #3a8ca4;
+    --nav-active-fg: #ffffff;
+    --theme-toggle-color: #6b7280;
+    --theme-toggle-track: #d7dee3;
+    --theme-toggle-thumb: #ffffff;
+}
+
+/* Dark palette — warm charcoal with soft teal accents (not pure black) */
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --background-color: #141618;
+    --font-color: #e4e6e8;
+    --invert-font-color: #141618;
+    --primary-color: #7ebfd0;
+    --secondary-color: #9aa3ad;
+    --tertiary-color: #9aa3ad;
+    --site-link-main: #7ebfd0;
+    --site-link-hover: #b3dde7;
+    --muted-color: #9aa3ad;
+    --panel-bg: rgba(255, 255, 255, 0.03);
+    --panel-padding: 15px;
+    /* Warm amber wash — readable, not neon */
+    --highlight-bg: #2a261f;
+    --rule-color: #2e343a;
+    --content-link-border: #6e7882;
+    --content-link-border-hover: #9aa3ad;
+    --content-link-hover-bg: rgba(126, 191, 208, 0.12);
+    --content-link-hover-shadow: rgba(126, 191, 208, 0.22);
+    --code-bg-color: #1e2226;
+    /* Deeper teal pill — parallel to light, readable on charcoal */
+    --nav-active-bg: #3d6a78;
+    --nav-active-fg: #eef8fb;
+    --theme-toggle-color: #9aa3ad;
+    --theme-toggle-track: #2a3036;
+    --theme-toggle-thumb: #7ebfd0;
+    --progress-bar-background: #2e343a;
+    --progress-bar-fill: #7ebfd0;
+    --error-color: #e87a90;
+}
+
 :root {
     --base-font-size: {{ $baseFont }};
     --header-font-size: {{ $headerFont }};
@@ -19,12 +79,31 @@
     --profile-role-font-size: {{ $profileRoleFont }};
     --authors-after-title-gap: {{ $authorsAfterTitleGap }};
     --display-h1-decoration: none;
-    --site-link-main: {{ $linkMain }};
-    --site-link-hover: {{ $linkHover }};
 }
 
 html, body {
     font-size: var(--base-font-size);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+::selection {
+    background: color-mix(in srgb, var(--primary-color) 55%, transparent);
+    color: var(--font-color);
+}
+
+body.terminal,
+.terminal h1,
+.terminal h2,
+.terminal h3,
+.terminal h4,
+.terminal h5,
+.terminal h6,
+.terminal p,
+.terminal li,
+.terminal strong,
+.terminal .logo {
+    color: var(--font-color);
 }
 
 .terminal-nav,
@@ -74,6 +153,7 @@ h1.page-title {
 h2.profile-name {
     margin-bottom: 0.15em;
     font-size: var(--profile-name-font-size) !important;
+    color: var(--font-color) !important;
 }
 
 .profile-role {
@@ -81,7 +161,7 @@ h2.profile-name {
     font-size: var(--profile-role-font-size) !important;
     font-weight: normal;
     font-style: italic;
-    color: var(--font-color, inherit);
+    color: var(--font-color);
     letter-spacing: 0.01em;
 }
 
@@ -120,17 +200,49 @@ h1::after {
 
 .authors {
     font-style: italic;
-    color: #666;
+    color: var(--muted-color);
     margin: var(--authors-after-title-gap) 0 1em 0;
     line-height: 1.45;
+    text-wrap: pretty;
+}
+
+.authors .author-self {
+    text-decoration: underline;
+}
+
+.authors-compact {
+    display: none;
 }
 
 .research-item-compact .authors {
     margin-bottom: 0.35em;
 }
 
+.research-item.highlight {
+    background-color: var(--highlight-bg);
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .patents-section {
     margin-top: 2.75em;
+    border-top-color: var(--rule-color);
+}
+
+.patents-section hr,
+.research-list hr,
+hr {
+    border-bottom-color: var(--rule-color);
+}
+
+.footer {
+    border-top-color: var(--rule-color);
+    color: var(--muted-color);
+}
+
+.bio-panel {
+    background-color: var(--panel-bg);
+    padding: var(--panel-padding);
 }
 
 .research-item {
@@ -139,11 +251,12 @@ h1::after {
 
 .research-item .content-wrapper {
     display: block;
+    overflow: auto;
 }
 
 .research-item .thumbnail {
     float: right;
-    margin: 0 0 1em 1.5em;
+    margin: 0.15em 0 1em 1.5em;
 }
 
 .research-item .thumbnail img {
@@ -162,17 +275,29 @@ h1::after {
     clear: both;
 }
 
+/* Paper figures: hide in dark mode (light canvases clash) and on mobile */
+html[data-theme="dark"] .research-item .thumbnail {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
-    .thumbnail {
-        display: none !important;
-        float: none !important;
-        margin: 0 !important;
+    .authors-full {
+        display: none;
     }
-    .content-wrapper {
-        gap: 0 !important;
+    .authors-compact {
+        display: inline;
     }
-    .authors {
+
+    .research-abstract {
+        display: none;
+    }
+
+    .research-item .thumbnail {
         display: none !important;
+    }
+
+    .research-item .details p {
+        margin-bottom: 0;
     }
 }
 
@@ -197,39 +322,119 @@ h1::after {
     margin-right: 5px;
 }
 
+/* Theme toggle — minimal sun / switch / moon */
+.theme-toggle {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: var(--theme-toggle-color);
+    cursor: pointer;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.theme-switch-icon {
+    display: block;
+    flex: 0 0 auto;
+    opacity: 0.45;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+html[data-theme="light"] .theme-switch-sun,
+html[data-theme="dark"] .theme-switch-moon {
+    opacity: 0.9;
+    color: var(--site-link-main);
+}
+
+.theme-switch-track {
+    position: relative;
+    display: inline-block;
+    width: 1.7em;
+    height: 0.95em;
+    border-radius: 999px;
+    background: var(--theme-toggle-track);
+    transition: background 0.2s ease;
+}
+
+.theme-switch-thumb {
+    position: absolute;
+    top: 0.12em;
+    left: 0.12em;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background: var(--theme-toggle-thumb);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+html[data-theme="dark"] .theme-switch-thumb {
+    transform: translateX(0.75em);
+}
+
+.theme-toggle:hover .theme-switch-icon {
+    opacity: 0.7;
+}
+
+html[data-theme="light"] .theme-toggle:hover .theme-switch-sun,
+html[data-theme="dark"] .theme-toggle:hover .theme-switch-moon {
+    opacity: 1;
+}
+
+.theme-toggle:hover {
+    background: transparent !important;
+}
+
+.theme-toggle:focus-visible {
+    outline: 1px dotted var(--site-link-main);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 a.link-normal {
-    color: #1a95e0 !important;
+    color: var(--site-link-main) !important;
     text-decoration: underline !important;
     transition: color 0.2s;
 }
 a.link-normal:hover {
-    color: #0d5c91 !important;
+    color: var(--site-link-hover) !important;
 }
 
 a.link-dotted {
-    border-bottom: 1px dotted #888 !important;
+    border-bottom: 1px dotted var(--content-link-border) !important;
     text-decoration: none !important;
     padding-bottom: 1px;
     transition: border-color 0.2s, color 0.2s;
-    color: #3a8ca4 !important;
+    color: var(--site-link-main) !important;
 }
 a.link-dotted:hover {
-    border-bottom: 1px solid #444 !important;
-    color: #20607a !important;
+    border-bottom: 1px solid var(--content-link-border-hover) !important;
+    color: var(--site-link-hover) !important;
 }
 
 .content-link {
     color: var(--site-link-main) !important;
     text-decoration: none !important;
-    border-bottom: 1px dotted #888 !important;
+    border-bottom: 1px dotted var(--content-link-border) !important;
     padding-bottom: 1px;
-    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 .content-link:hover {
     color: var(--site-link-hover) !important;
-    border-bottom: 1px dotted #bbb !important;
-    box-shadow: 0 2px 0 0 rgba(58,140,164,0.08);
-    background: rgba(58,140,164,0.04);
+    border-bottom: 1px dotted var(--content-link-border-hover) !important;
+    box-shadow: 0 2px 0 0 var(--content-link-hover-shadow);
+    background: var(--content-link-hover-bg);
 }
 
 .site-link {
@@ -241,5 +446,28 @@ a.link-dotted:hover {
 .site-link:hover {
     color: var(--site-link-hover) !important;
     text-decoration: underline !important;
+    background: transparent !important;
+}
+
+.terminal-menu a.site-link.active,
+.terminal-menu a.site-link.active:hover {
+    color: var(--nav-active-fg) !important;
+    background: var(--nav-active-bg) !important;
+    border-radius: 4px;
+    padding: 2px 8px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.terminal-menu a.site-link.active:hover {
+    filter: brightness(1.06);
+}
+
+/* Soften theme default link hover flash */
+.terminal a:hover {
+    background-color: transparent;
+}
+.terminal a.content-link:hover {
+    background: var(--content-link-hover-bg);
 }
 </style>
