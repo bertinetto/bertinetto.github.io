@@ -1,6 +1,6 @@
 ---
 title: "Effective Biological Representation Learning by Masking Gene Expression"
-conference: "preprint"
+conference: "NeurIPS"
 year: 2026
 show_year: false
 arxiv: "https://arxiv.org/abs/2605.31562"
